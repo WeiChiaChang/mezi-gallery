@@ -1,0 +1,81 @@
+body {
+  background: url('../img/dark_embroidery.png') fixed;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.column {
+  width: 30%;
+  /*height: 360px;*/
+  margin: 3.2% 1.66666667%;
+  float: left;
+  background: url('../img/playstation-pattern.png');
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.ribbon {
+  font-size: 1em;
+  width: 100%;
+  position: relative;
+  background: salmon;
+  color: #fff;
+  text-align: center;
+  padding: .75em .5em;
+  /*margin: -4em 0 0 -.5em;*/
+  font-family: "Helvetica Neau", helvetica;
+  display: block;
+}
+
+.ribbon-content:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 0em 0em .5em .5em;
+  border-color: transparent transparent #A3144D;
+  top: -.5em;
+  left: 0;
+}
+
+.ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-width: 0em .5em .5em 0em;
+  border-color: transparent transparent #A3144D;
+  top: -.5em;
+  right: 0;
+}
+
+@media only screen and (max-width: 48em){
+
+  .column {
+    width: 46.6666667%;
+  }
+
+}
+
+@media only screen and (max-width: 37.5em){
+
+  .wrapper{
+    width: 100%;
+  }
+
+  .column{
+    float: none;
+    margin: 4em auto;
+    width: 65%;
+  }
+
+}

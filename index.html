@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mezi Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app" class="wrapper">
+    <section class="column" v-for="(mezi, index) in meziData">
+      <img :src="mezi.url" alt="" />
+      <!-- <h2 class="ribbon">
+        <span class="ribbon-content">妹紙 {{index + 1}}</span>
+      </h2> -->
+    </section>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
